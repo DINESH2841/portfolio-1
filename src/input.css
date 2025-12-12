@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #ffffff;
+    --text: #0f172a;
+    --text-light: #475569;
+    --border: #e2e8f0;
+    --button-bg: #2563eb;
+    --button-text: #ffffff;
+    --card-bg: #ffffff;
+  }
+
+  [data-theme="dark"] {
+    --bg: #0f172a;
+    --text: #f8fafc;
+    --text-light: #94a3b8;
+    --border: #1e293b;
+    --button-bg: #3b82f6;
+    --button-text: #ffffff;
+    --card-bg: #1e293b;
+  }
+
+  [data-theme="black"] {
+    --bg: #000000;
+    --text: #ffffff;
+    --text-light: #a3a3a3;
+    --border: #262626;
+    --button-bg: #2563eb;
+    --button-text: #ffffff;
+    --card-bg: #111111;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-6 py-24 md:py-32;
+  }
+  
+  .card-base {
+    @apply rounded-2xl border transition-all duration-300 flex flex-col h-full overflow-hidden;
+    background-color: var(--card-bg);
+    border-color: var(--border);
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-2 hover:shadow-2xl;
+  }
+
+  .btn-primary {
+    @apply px-8 py-3 rounded-full font-semibold transition-transform active:scale-95 inline-block text-center;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+  }
+  
+  .nav-link {
+    @apply font-medium text-sm tracking-wide transition-colors hover:text-blue-500;
+    color: var(--text-light);
+  }
+}

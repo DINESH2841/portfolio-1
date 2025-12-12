@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. Dinesh | Software Engineer</title>
+    <meta name="description" content="Portfolio of S. Dinesh - Software Engineer, Full Stack Developer, IoT Enthusiast">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="assets/theme.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 nav-header">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-tight" style="color: var(--text)">S. Dinesh</a>
+            <div class="flex items-center gap-8">
+                <a href="resume/index.html" class="hidden md:block text-sm font-medium hover:text-blue-500 transition-colors" style="color: var(--text-light)">Resume</a>
+                <button id="theme-toggle-btn" aria-label="Toggle Theme" class="text-xl"></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-6 py-24 md:py-40 text-center">
+        <div class="inline-block mb-8 p-1 rounded-full border border-gray-200 dark:border-gray-800">
+            <img src="https://picsum.photos/160/160" alt="S. Dinesh" class="w-32 h-32 rounded-full object-cover">
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tighter">
+            Hi, I'm <span class="text-gradient">S. Dinesh</span>
+        </h1>
+        <p class="text-xl md:text-3xl mb-10 max-w-3xl mx-auto leading-relaxed" style="color: var(--text-light)">
+            Engineering robust systems from <span class="font-semibold" style="color: var(--text)">Chip</span> to <span class="font-semibold" style="color: var(--text)">Cloud</span>.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 text-base font-medium" style="color: var(--text-light)">
+            <span class="px-5 py-2 rounded-full border" style="border-color: var(--border)">Full-Stack</span>
+            <span class="px-5 py-2 rounded-full border" style="border-color: var(--border)">IoT & Embedded</span>
+            <span class="px-5 py-2 rounded-full border" style="border-color: var(--border)">AI/ML Enthusiast</span>
+        </div>
+    </section>
+
+    <!-- Portals Grid -->
+    <section class="max-w-6xl mx-auto px-6 pb-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            
+            <!-- SDE Portal -->
+            <a href="sde/index.html" class="card group cursor-pointer" style="text-decoration: none;">
+                <div class="flex justify-between items-start mb-8">
+                    <div class="p-4 rounded-2xl" style="background-color: rgba(37, 99, 235, 0.1)">
+                        <i class="fas fa-code text-3xl" style="color: var(--button-bg)"></i>
+                    </div>
+                    <span class="text-sm font-semibold transition-transform group-hover:translate-x-1" style="color: var(--button-bg)">View Profile &rarr;</span>
+                </div>
+                <h2 class="text-3xl font-bold mb-4 tracking-tight" style="color: var(--text)">Software Engineer</h2>
+                <p class="text-lg leading-relaxed flex-grow" style="color: var(--text-light)">Deep dive into backend architectures, API design, and enterprise-grade solutions like my Travel Request System.</p>
+            </a>
+
+            <!-- Full Stack Portal -->
+            <a href="full-stack/index.html" class="card group cursor-pointer" style="text-decoration: none;">
+                <div class="flex justify-between items-start mb-8">
+                    <div class="p-4 rounded-2xl" style="background-color: rgba(16, 185, 129, 0.1)">
+                        <i class="fas fa-layer-group text-3xl" style="color: #10b981"></i>
+                    </div>
+                    <span class="text-sm font-semibold transition-transform group-hover:translate-x-1" style="color: var(--button-bg)">View Profile &rarr;</span>
+                </div>
+                <h2 class="text-3xl font-bold mb-4 tracking-tight" style="color: var(--text)">Full-Stack Developer</h2>
+                <p class="text-lg leading-relaxed flex-grow" style="color: var(--text-light)">Explore reactive interfaces and real-time dashboards built with React, Next.js, and WebSocket technologies.</p>
+            </a>
+
+            <!-- IoT Portal -->
+            <a href="iot/index.html" class="card group cursor-pointer" style="text-decoration: none;">
+                <div class="flex justify-between items-start mb-8">
+                    <div class="p-4 rounded-2xl" style="background-color: rgba(245, 158, 11, 0.1)">
+                        <i class="fas fa-microchip text-3xl" style="color: #f59e0b"></i>
+                    </div>
+                    <span class="text-sm font-semibold transition-transform group-hover:translate-x-1" style="color: var(--button-bg)">View Profile &rarr;</span>
+                </div>
+                <h2 class="text-3xl font-bold mb-4 tracking-tight" style="color: var(--text)">IoT & Embedded</h2>
+                <p class="text-lg leading-relaxed flex-grow" style="color: var(--text-light)">Bridging the physical and digital worlds with ESP32, MQTT, and sensor networks for automation.</p>
+            </a>
+
+            <!-- Resume Portal -->
+            <a href="resume/index.html" class="card group cursor-pointer" style="text-decoration: none;">
+                <div class="flex justify-between items-start mb-8">
+                    <div class="p-4 rounded-2xl" style="background-color: rgba(99, 102, 241, 0.1)">
+                        <i class="fas fa-file-alt text-3xl" style="color: #6366f1"></i>
+                    </div>
+                    <span class="text-sm font-semibold transition-transform group-hover:translate-x-1" style="color: var(--button-bg)">View Profile &rarr;</span>
+                </div>
+                <h2 class="text-3xl font-bold mb-4 tracking-tight" style="color: var(--text)">Curriculum Vitae</h2>
+                <p class="text-lg leading-relaxed flex-grow" style="color: var(--text-light)">A concise overview of my education, certifications, and technical proficiencies formatted for print.</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-16 text-center" style="border-color: var(--border)">
+        <div class="flex justify-center gap-8 mb-8">
+            <a href="https://linkedin.com/in/dinesh" target="_blank" rel="noopener noreferrer" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/dinesh2841" target="_blank" rel="noopener noreferrer" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:email@example.com" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://dineshsevinni.me/" target="_blank" rel="noopener noreferrer" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="Personal Website">
+                <i class="fas fa-globe"></i>
+            </a>
+        </div>
+        <p class="text-sm font-medium" style="color: var(--text-light)">&copy; 2025 S. Dinesh. Crafted with precision.</p>
+    </footer>
+
+</body>
+</html>

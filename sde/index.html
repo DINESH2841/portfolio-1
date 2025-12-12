@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. Dinesh | SDE</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../assets/theme.js" defer></script>
+</head>
+<body>
+
+    <nav class="sticky top-0 z-50 nav-header">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="../index.html" class="text-lg font-bold" style="color: var(--text)">← S. Dinesh / SDE</a>
+            <button id="theme-toggle-btn" aria-label="Toggle Theme" class="text-xl"></button>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-24 md:py-32">
+        
+        <!-- Hero -->
+        <div class="mb-32 text-center md:text-left">
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tighter text-gradient">Software Engineer</h1>
+            <p class="text-xl md:text-2xl max-w-3xl leading-relaxed" style="color: var(--text-light)">
+                Specializing in robust backend systems, RESTful API architecture, and database optimization.
+            </p>
+        </div>
+
+        <!-- About Me -->
+        <div class="mb-32">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">About Me</h2>
+            <div class="max-w-4xl bg-gray-50 dark:bg-white/5 rounded-3xl p-8 md:p-12 border" style="border-color: var(--border)">
+                <p class="text-lg md:text-xl leading-relaxed mb-6" style="color: var(--text-light)">
+                    I'm a software engineer who builds production-ready systems. I've shipped an enterprise workflow application at <strong style="color: var(--text)">Hitachi Energy</strong>, working across frontend, backend, and databases, with a strong focus on clean architecture and reliability.
+                </p>
+                <p class="text-lg md:text-xl leading-relaxed" style="color: var(--text-light)">
+                    My expertise lies in owning features end-to-end, from integrating secure SSO authentication to designing complex role-based approval workflows. I am currently actively seeking 2026 off-campus roles & internships where I can contribute to scalable engineering solutions.
+                </p>
+            </div>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="mb-32">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Experience & Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                
+                <!-- Project 1 -->
+                <article class="card h-full">
+                    <div class="mb-6">
+                        <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(37,99,235,0.05); border-color: rgba(37,99,235,0.2); color: var(--button-bg)">Hitachi Energy Intern</span>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">Enterprise Travel Request System</h3>
+                    <p class="text-lg mb-8 flex-grow leading-relaxed" style="color: var(--text-light)">
+                        Built a production-grade internal tool for managing employee travel approvals. Features included role-based access, multi-employee requests, draft saving, and automated emails.
+                    </p>
+                    <div class="mb-8">
+                        <ul class="text-sm space-y-3 font-medium" style="color: var(--text-light)">
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Integrated Microsoft SSO for secure auto-login</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Designed Role-Based Workflows (RBAC)</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Manager Dashboard for status tracking</li>
+                        </ul>
+                    </div>
+                    <div class="flex gap-4 mt-auto">
+                        <a href="#" class="btn text-sm w-full text-center">View System Design</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="card h-full">
+                    <div class="mb-6">
+                        <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(37,99,235,0.05); border-color: rgba(37,99,235,0.2); color: var(--button-bg)">ML Pipeline</span>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">Oral Abnormality Detection</h3>
+                    <p class="text-lg mb-8 flex-grow leading-relaxed" style="color: var(--text-light)">
+                        Implemented a Machine Learning pipeline improving detection accuracy using DenseNet201 and AO. Included training, evaluation, and reproducible notebooks.
+                    </p>
+                    <div class="mb-8">
+                        <ul class="text-sm space-y-3 font-medium" style="color: var(--text-light)">
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Python & TensorFlow</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>DenseNet201 Architecture</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Received Best Poster Award</li>
+                        </ul>
+                    </div>
+                    <div class="flex gap-4 mt-auto">
+                        <a href="https://github.com/dinesh2841" class="btn text-sm w-full text-center">View GitHub</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="mb-32">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Technical Arsenal</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
+                    <i class="fab fa-node text-5xl mb-6 text-green-600"></i>
+                    <h4 class="font-bold text-lg">Node.js</h4>
+                </div>
+                <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
+                    <i class="fas fa-database text-5xl mb-6 text-blue-600"></i>
+                    <h4 class="font-bold text-lg">MSSQL / SQL</h4>
+                </div>
+                <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
+                    <i class="fab fa-python text-5xl mb-6 text-yellow-500"></i>
+                    <h4 class="font-bold text-lg">Python</h4>
+                </div>
+                <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
+                    <i class="fab fa-java text-5xl mb-6 text-red-500"></i>
+                    <h4 class="font-bold text-lg">Java</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="card text-center py-20 px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Ready to Architect Solutions?</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto leading-relaxed" style="color: var(--text-light)">Open to Software Engineering roles. Let's discuss how I can contribute to your backend infrastructure.</p>
+            <div>
+                <a href="mailto:email@example.com" class="btn text-lg px-10 py-4">Start a Conversation</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="border-t py-16 text-center" style="border-color: var(--border)">
+        <div class="flex justify-center gap-8 mb-8">
+            <a href="https://linkedin.com/in/dinesh" target="_blank" rel="noopener noreferrer" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/dinesh2841" target="_blank" rel="noopener noreferrer" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:email@example.com" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://dineshsevinni.me/" target="_blank" rel="noopener noreferrer" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="Personal Website">
+                <i class="fas fa-globe"></i>
+            </a>
+        </div>
+        <p class="text-sm font-medium" style="color: var(--text-light)">S. Dinesh | Software Engineer Portfolio &copy; 2025</p>
+    </footer>
+</body>
+</html>

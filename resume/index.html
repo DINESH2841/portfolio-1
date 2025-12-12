@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. Dinesh | Resume</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../assets/theme.js" defer></script>
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: white !important; color: black !important; margin: 0 !important; }
+            .card { border: none !important; box-shadow: none !important; padding: 0 !important; background: transparent !important; }
+            a { text-decoration: none !important; color: black !important; }
+            .break-inside-avoid { break-inside: avoid; }
+            nav { display: none; }
+            main { padding: 0 !important; max-width: 100% !important; margin: 0 !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sticky top-0 z-50 nav-header no-print">
+        <div class="max-w-4xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="../index.html" class="text-lg font-bold" style="color: var(--text)">← Back to Portfolio</a>
+            <div class="flex gap-4">
+                <button onclick="window.print()" class="btn-outline px-4 py-2 rounded-full text-sm font-semibold cursor-pointer">
+                    <i class="fas fa-print mr-2"></i> Print
+                </button>
+                <button id="theme-toggle-btn" aria-label="Toggle Theme" class="text-xl px-2"></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-24">
+        
+        <!-- Resume Header -->
+        <header class="border-b pb-12 mb-12" style="border-color: var(--border)">
+            <h1 class="text-5xl font-bold mb-4 tracking-tight">S. Dinesh</h1>
+            <p class="text-xl font-medium mb-6" style="color: var(--text-light)">Software Engineer | Actively seeking 2026 roles</p>
+            <div class="flex flex-wrap gap-6 text-sm font-medium" style="color: var(--text-light)">
+                <span class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i>Chennai, India</span>
+                <a href="mailto:email@example.com" class="hover:text-blue-500 flex items-center"><i class="fas fa-envelope mr-2"></i>email@example.com</a>
+                <a href="https://linkedin.com/in/dinesh" class="hover:text-blue-500 flex items-center"><i class="fab fa-linkedin mr-2"></i>/in/dinesh</a>
+                <a href="https://github.com/dinesh2841" class="hover:text-blue-500 flex items-center"><i class="fab fa-github mr-2"></i>/dinesh2841</a>
+            </div>
+        </header>
+
+        <!-- Professional Experience -->
+        <section class="mb-12 break-inside-avoid">
+            <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Experience</h3>
+            
+            <div class="mb-8">
+                <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-2xl">Hitachi Energy</h4>
+                    <span class="text-sm font-medium bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded" style="color: var(--text)">Aug 2025 – Nov 2025</span>
+                </div>
+                <div class="text-base font-semibold mb-4" style="color: var(--button-bg)">Software Engineering Intern</div>
+                <ul class="text-base list-disc pl-5 space-y-2 leading-relaxed" style="color: var(--text-light)">
+                    <li>Built an enterprise <strong>Travel Request Management System</strong> using Next.js, Express.js, and MSSQL.</li>
+                    <li>Integrated <strong>Microsoft SSO</strong> for secure auto-login using company email credentials.</li>
+                    <li>Designed role-based workflows for employees and managers with approval states.</li>
+                    <li>Implemented draft/save/submit functionality with separate database handling.</li>
+                    <li>Automated email notifications for submission and approval events.</li>
+                    <li>Developed a Manager Dashboard to track request status (Pending / Approved / Rejected).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="mb-12 break-inside-avoid">
+            <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Key Projects</h3>
+            
+            <div class="mb-8">
+                <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-xl">IoT Monitoring System (ESP32)</h4>
+                    <span class="text-xs font-mono px-2 py-1 rounded bg-gray-100 dark:bg-gray-800" style="color: var(--text-light)">ESP32, MQTT, Raspberry Pi</span>
+                </div>
+                <p class="text-base leading-relaxed" style="color: var(--text-light)">
+                    Designed an IoT stack with sensor ingestion on ESP32, MQTT transport, edge processing on Raspberry Pi, and a web dashboard for realtime monitoring.
+                </p>
+            </div>
+
+            <div class="mb-8">
+                <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-xl">Oral Abnormality Detection</h4>
+                    <span class="text-xs font-mono px-2 py-1 rounded bg-gray-100 dark:bg-gray-800" style="color: var(--text-light)">Python, TensorFlow, DenseNet201</span>
+                </div>
+                <p class="text-base leading-relaxed" style="color: var(--text-light)">
+                    Implemented an ML pipeline improving detection accuracy using DenseNet201 and AO, with training, evaluation, and reproducible notebooks.
+                </p>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="mb-12 break-inside-avoid">
+            <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Technical Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <strong class="block mb-2 text-base font-semibold">Languages</strong>
+                    <p class="text-base" style="color: var(--text-light)">TypeScript, JavaScript, Python, Java, C/C++, SQL</p>
+                </div>
+                <div>
+                    <strong class="block mb-2 text-base font-semibold">Web Development</strong>
+                    <p class="text-base" style="color: var(--text-light)">React.js, Next.js, Node.js, Express.js, Tailwind CSS</p>
+                </div>
+                <div>
+                    <strong class="block mb-2 text-base font-semibold">Databases & Cloud</strong>
+                    <p class="text-base" style="color: var(--text-light)">MSSQL, MongoDB, Firebase, Azure, AWS IoT</p>
+                </div>
+                <div>
+                    <strong class="block mb-2 text-base font-semibold">Embedded & AI</strong>
+                    <p class="text-base" style="color: var(--text-light)">ESP32, Raspberry Pi, RTOS, TensorFlow, Keras</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-12 break-inside-avoid">
+            <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Education</h3>
+            
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h4 class="font-bold text-lg">SIMATS University, Chennai</h4>
+                    <span class="text-sm" style="color: var(--text-light)">2022 - 2026</span>
+                </div>
+                <p class="text-base font-medium" style="color: var(--text)">BE. Electronics and Communication Engineering</p>
+                <p class="text-sm mt-1" style="color: var(--text-light)">Focused on embedded systems, digital signal processing, and software development.</p>
+            </div>
+
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h4 class="font-bold text-lg">Sri Chaitanya Jr College, Tirupati</h4>
+                    <span class="text-sm" style="color: var(--text-light)">2022</span>
+                </div>
+                <p class="text-base font-medium" style="color: var(--text)">Higher Secondary Certificate</p>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements -->
+        <section class="break-inside-avoid">
+            <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Awards & Certifications</h3>
+            <ul class="text-base space-y-3" style="color: var(--text-light)">
+                <li><strong style="color: var(--text)">NPTEL Discipline Star (2025):</strong> Awarded by IIT Madras for top performance across multiple courses.</li>
+                <li><strong style="color: var(--text)">Best Poster Award:</strong> SIMATS University (Research on Oral Abnormality Detection).</li>
+                <li><strong style="color: var(--text)">Oracle Cloud Infrastructure AI Foundations:</strong> Issued by Oracle.</li>
+                <li><strong style="color: var(--text)">NPTEL Certifications:</strong> IoT, Programming in Java, Python for Data Science.</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>
