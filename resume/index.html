@@ -51,7 +51,7 @@
         <header class="border-b pb-12 mb-12" style="border-color: var(--border)">
             <h1 class="text-5xl font-bold mb-4 tracking-tight">S. Dinesh</h1>
             <p class="text-xl font-medium mb-6" style="color: var(--text-light)">
-                Backend Software Engineer
+                Backend-focused Software Engineer
             </p>
             <div class="flex flex-wrap gap-6 text-sm font-medium" style="color: var(--text-light)">
                 <span class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i>Chennai, India</span>
@@ -65,7 +65,7 @@
         <section class="mb-12 break-inside-avoid">
              <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Summary</h3>
              <p class="text-base leading-relaxed" style="color: var(--text-light)">
-                Backend-focused software engineer with internship experience building secure, scalable REST APIs and data-driven systems. Strong in Node.js, authentication, and database-backed applications.
+                Backend-focused software engineer with internship experience building secure, scalable REST APIs and data-driven systems. Strong in Node.js, authentication, database modeling, and bridging hardware with cloud infrastructure.
              </p>
         </section>
 
@@ -80,10 +80,10 @@
                 </div>
                 <div class="text-base font-semibold mb-4" style="color: var(--button-bg)">Software Developer Intern</div>
                 <ul class="text-base list-disc pl-5 space-y-2 leading-relaxed" style="color: var(--text-light)">
-                    <li>Worked on backend components for enterprise-style applications.</li>
-                    <li>Built and tested <strong>REST APIs</strong> with authentication and role-based access.</li>
-                    <li>Collaborated with team members to debug and improve backend workflows.</li>
-                    <li>Followed clean code practices and version control using Git.</li>
+                    <li>Engineered backend APIs for an enterprise <strong>Travel Request Management System</strong>.</li>
+                    <li>Implemented <strong>JWT-based authentication</strong> and role-based access control (RBAC) to secure endpoints.</li>
+                    <li>Designed normalized MSSQL database schemas to handle complex multi-stage approval workflows.</li>
+                    <li>Optimized API response times and implemented middleware for centralized error logging.</li>
                 </ul>
             </div>
         </section>
@@ -92,26 +92,39 @@
         <section class="mb-12 break-inside-avoid">
             <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Key Projects</h3>
             
-            <div class="mb-8">
-                <div class="flex justify-between items-baseline mb-2">
+            <!-- Backend -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline mb-1">
                     <h4 class="font-bold text-xl">Travel Request Management System</h4>
-                    <span class="text-xs font-mono px-2 py-1 rounded bg-gray-100 dark:bg-gray-800" style="color: var(--text-light)">Node.js, Express.js, MongoDB</span>
+                    <span class="text-xs font-mono px-2 py-1 rounded bg-gray-100 dark:bg-gray-800" style="color: var(--text-light)">Node.js, Express, MSSQL</span>
                 </div>
                 <ul class="text-base list-disc pl-5 space-y-1 leading-relaxed" style="color: var(--text-light)">
-                    <li>Built backend APIs for managing employee travel requests with approval workflows.</li>
-                    <li>Implemented <strong>JWT-based authentication</strong> and role-based access control.</li>
-                    <li>Designed database schema and handled validation and error cases.</li>
+                    <li>Designed REST APIs for request creation, validation, and status tracking.</li>
+                    <li>Implemented secure authentication using Microsoft Entra ID (OIDC) and local JWT fallbacks.</li>
                 </ul>
             </div>
 
-            <div class="mb-8">
-                <div class="flex justify-between items-baseline mb-2">
-                    <h4 class="font-bold text-xl">IoT Data Ingestion Backend</h4>
-                    <span class="text-xs font-mono px-2 py-1 rounded bg-gray-100 dark:bg-gray-800" style="color: var(--text-light)">Node.js / Python, MongoDB</span>
+            <!-- Full Stack -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h4 class="font-bold text-xl">Live Analytics Dashboard</h4>
+                    <span class="text-xs font-mono px-2 py-1 rounded bg-gray-100 dark:bg-gray-800" style="color: var(--text-light)">React, WebSockets, Node.js</span>
                 </div>
                 <ul class="text-base list-disc pl-5 space-y-1 leading-relaxed" style="color: var(--text-light)">
-                    <li>Developed APIs to collect and store sensor data from ESP32 devices.</li>
-                    <li>Processed time-series data and exposed endpoints for monitoring.</li>
+                    <li>Built a real-time data visualization tool using WebSockets for sub-second latency updates.</li>
+                    <li>Optimized frontend rendering performance to handle high-frequency data streams.</li>
+                </ul>
+            </div>
+
+            <!-- IoT -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h4 class="font-bold text-xl">IoT Telemetry Stack</h4>
+                    <span class="text-xs font-mono px-2 py-1 rounded bg-gray-100 dark:bg-gray-800" style="color: var(--text-light)">ESP32, MQTT, InfluxDB</span>
+                </div>
+                <ul class="text-base list-disc pl-5 space-y-1 leading-relaxed" style="color: var(--text-light)">
+                    <li>Architected an end-to-end telemetry pipeline from sensor edge nodes to cloud storage.</li>
+                    <li>Implemented resilient data buffering on edge devices to handle network intermittency.</li>
                 </ul>
             </div>
         </section>
@@ -121,26 +134,30 @@
             <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Technical Skills</h3>
             <div class="grid grid-cols-1 gap-4">
                 <div class="flex flex-col md:flex-row md:items-baseline">
-                    <strong class="w-32 block text-base font-semibold">Backend</strong>
-                    <p class="text-base flex-1" style="color: var(--text-light)">Node.js, Express.js, REST APIs, JWT, MongoDB</p>
+                    <strong class="w-40 block text-base font-semibold">Backend</strong>
+                    <p class="text-base flex-1" style="color: var(--text-light)">Node.js, Express.js, REST APIs, JWT, Middleware Design</p>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-baseline">
-                    <strong class="w-32 block text-base font-semibold">Programming</strong>
-                    <p class="text-base flex-1" style="color: var(--text-light)">JavaScript, Python</p>
+                    <strong class="w-40 block text-base font-semibold">Database</strong>
+                    <p class="text-base flex-1" style="color: var(--text-light)">MSSQL, MongoDB, InfluxDB (Time-Series)</p>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-baseline">
-                    <strong class="w-32 block text-base font-semibold">Tools</strong>
-                    <p class="text-base flex-1" style="color: var(--text-light)">Git, Postman, Linux basics</p>
+                    <strong class="w-40 block text-base font-semibold">Frontend</strong>
+                    <p class="text-base flex-1" style="color: var(--text-light)">React.js, Next.js, Tailwind CSS</p>
+                </div>
+                 <div class="flex flex-col md:flex-row md:items-baseline">
+                    <strong class="w-40 block text-base font-semibold">IoT & Embedded</strong>
+                    <p class="text-base flex-1" style="color: var(--text-light)">ESP32, MQTT, UART/SPI/I2C, Raspberry Pi</p>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-baseline">
-                    <strong class="w-32 block text-base font-semibold">Concepts</strong>
-                    <p class="text-base flex-1" style="color: var(--text-light)">Authentication, API design, database modeling, debugging</p>
+                    <strong class="w-40 block text-base font-semibold">Tools</strong>
+                    <p class="text-base flex-1" style="color: var(--text-light)">Git, Postman, Docker, Linux</p>
                 </div>
             </div>
         </section>
 
         <!-- Education -->
-        <section class="mb-12 break-inside-avoid">
+        <section class="break-inside-avoid">
             <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Education</h3>
             
             <div class="mb-6">
