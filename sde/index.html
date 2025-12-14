@@ -20,24 +20,17 @@
     <main class="pt-32 md:pt-48 max-w-6xl mx-auto px-6 pb-24">
         
         <!-- Hero -->
-        <div class="mb-32 text-center md:text-left">
+        <div class="mb-24 text-center md:text-left">
             <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tighter text-gradient">Backend Software Engineer (SDE)</h1>
             <p class="text-xl md:text-2xl max-w-3xl leading-relaxed mb-6" style="color: var(--text-light)">
                 I design and build reliable backend systems, REST APIs, and data-driven services with a focus on security, scalability, and clean architecture.
             </p>
-            <div class="p-4 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 inline-block text-left">
-                <p class="text-base font-medium text-blue-800 dark:text-blue-200">
-                    <i class="fas fa-check-circle mr-2"></i>Internship experience building production-style backend systems using Node.js, databases, and authentication workflows.
-                </p>
-            </div>
-            
-            <div class="mt-8 flex gap-4 justify-center md:justify-start">
-                <a href="#projects" class="btn">View Backend Projects</a>
-                <a href="../resume/index.html" class="btn-outline">Download Backend Resume</a>
+            <div class="flex gap-4 justify-center md:justify-start">
+                <a href="../resume/index.html" class="btn">Download Backend Resume</a>
             </div>
         </div>
 
-        <!-- Project 1: Flagship (Internship) -->
+        <!-- Project 1: Flagship (Decision Driven) -->
         <div id="projects" class="mb-24">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Production Experience</h2>
             
@@ -46,22 +39,34 @@
                     <div>
                         <span class="text-sm font-bold px-3 py-1.5 rounded-full uppercase tracking-widest bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">Hitachi Energy Internship</span>
                         <h3 class="text-3xl md:text-4xl font-bold mt-4 mb-2">Travel Request Management System</h3>
-                        <p class="text-lg" style="color: var(--text-light)">Backend system for managing employee travel requests with multi-level approvals and audit tracking.</p>
+                        <p class="text-lg" style="color: var(--text-light)">Backend system to manage employee travel requests with approval workflows and audit history.</p>
                     </div>
                 </div>
 
                 <div class="mb-6">
-                    <strong class="text-lg block mb-2" style="color: var(--button-bg)">Role: Backend Developer</strong>
-                    <ul class="list-disc pl-5 space-y-2 text-lg leading-relaxed" style="color: var(--text-light)">
-                        <li>Designed REST APIs for request creation, approval, rejection, and status tracking.</li>
-                        <li>Implemented <strong>JWT-based authentication</strong> with role-based access control (employee, manager, admin).</li>
-                        <li>Structured <strong>MongoDB collections</strong> for users, travel requests, and approval history.</li>
-                        <li>Added request validation and centralized error handling for API stability.</li>
-                        <li>Ensured secure access to sensitive request data across user roles.</li>
+                    <strong class="text-lg block mb-4" style="color: var(--button-bg)">Key backend decisions I made:</strong>
+                    <ul class="list-none space-y-4 text-lg leading-relaxed" style="color: var(--text-light)">
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1.5 mr-3 text-blue-500"></i>
+                            <span>Used <strong>role-based access control (RBAC)</strong> (employee/manager/admin) to prevent unauthorized approvals and data leaks.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1.5 mr-3 text-blue-500"></i>
+                            <span>Chose <strong>JWT for stateless authentication</strong> to simplify scaling and avoid server-side session storage.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1.5 mr-3 text-blue-500"></i>
+                            <span>Structured approval history separately in the database to preserve immutable <strong>audit trails</strong>.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1.5 mr-3 text-blue-500"></i>
+                            <span>Centralized input validation and error handling middleware to avoid inconsistent API behavior.</span>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="flex flex-wrap gap-2 mb-8">
+                <div class="flex flex-wrap gap-2 mb-2 pt-6 border-t" style="border-color: var(--border)">
+                    <span class="text-sm font-medium text-gray-500 mr-2 self-center">Tech Stack:</span>
                     <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">Node.js</span>
                     <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">Express.js</span>
                     <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">MongoDB</span>
@@ -71,127 +76,50 @@
         </div>
 
         <!-- Other Backend Projects -->
-        <div class="mb-32">
+        <div class="mb-24">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Backend Engineering Projects</h2>
             
             <div class="grid grid-cols-1 gap-12">
                 
                 <!-- Project 2: Auth System -->
                 <article class="card">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-2">User Authentication & Authorization Service</h3>
-                    <p class="text-lg mb-6" style="color: var(--text-light)">Backend service providing secure authentication and protected API access.</p>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-2">User Authentication Service</h3>
+                    <p class="text-lg mb-6" style="color: var(--text-light)">Secure backend service handling identity management and API protection.</p>
                     
                     <div class="mb-6">
-                        <strong class="text-base block mb-2" style="color: var(--button-bg)">Role: Backend Developer</strong>
+                        <strong class="text-base block mb-2" style="color: var(--button-bg)">Key Decisions:</strong>
                         <ul class="list-disc pl-5 space-y-2 text-base leading-relaxed" style="color: var(--text-light)">
-                            <li>Implemented JWT-based authentication and middleware-protected routes.</li>
-                            <li>Designed RESTful APIs following clean URL and HTTP status conventions.</li>
-                            <li>Added password hashing, input validation, and error responses.</li>
-                            <li>Handled unauthorized access and token expiration scenarios.</li>
+                            <li>Implemented <strong>bcrypt hashing</strong> with salting to secure user credentials at rest.</li>
+                            <li>Designed middleware-protected routes to ensure only authenticated requests reach sensitive endpoints.</li>
+                            <li>Standardized HTTP status codes (401 vs 403 vs 404) for clear client-side error handling.</li>
                         </ul>
-                    </div>
-                    
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">Node.js</span>
-                        <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">Express.js</span>
-                        <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">MongoDB</span>
                     </div>
                 </article>
 
                 <!-- Project 3: IoT Backend -->
                 <article class="card">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-2">IoT Data Ingestion & Monitoring Backend</h3>
-                    <p class="text-lg mb-6" style="color: var(--text-light)">Backend system for collecting and processing sensor data from ESP32-based devices.</p>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-2">IoT Data Ingestion Service</h3>
+                    <p class="text-lg mb-6" style="color: var(--text-light)">High-throughput backend for collecting sensor data from edge devices.</p>
                     
                     <div class="mb-6">
-                        <strong class="text-base block mb-2" style="color: var(--button-bg)">Role: Backend Developer</strong>
+                        <strong class="text-base block mb-2" style="color: var(--button-bg)">Key Decisions:</strong>
                         <ul class="list-disc pl-5 space-y-2 text-base leading-relaxed" style="color: var(--text-light)">
-                            <li>Designed APIs to receive sensor data from ESP32 devices via HTTP/LoRa gateways.</li>
-                            <li>Processed and stored <strong>time-series sensor data</strong> in a structured database.</li>
-                            <li>Built endpoints to retrieve historical data for monitoring and visualization.</li>
-                            <li>Handled missing or delayed data to ensure backend reliability.</li>
+                            <li>Decoupled ingestion from processing to handle burst traffic from devices.</li>
+                            <li>Used a <strong>Time-Series structure</strong> in the database to optimize for range queries and historical plotting.</li>
+                            <li>Implemented graceful handling of missing or malformed data packets to maintain system stability.</li>
                         </ul>
-                    </div>
-                    
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">Node.js/Python</span>
-                        <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">MongoDB</span>
-                        <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">ESP32</span>
                     </div>
                 </article>
 
             </div>
         </div>
 
-        <!-- Other Projects (Requested) -->
-        <div class="mb-32">
-             <h2 class="text-2xl md:text-3xl font-bold mb-8 tracking-tight">Other Technical Projects</h2>
-             <div class="card p-6 border-dashed" style="border-color: var(--border); background: transparent;">
-                 <p class="text-lg text-center" style="color: var(--text-light)">
-                     I also build <a href="../full-stack/index.html" class="text-blue-500 hover:underline">Full-Stack Applications</a> and <a href="../iot/index.html" class="text-blue-500 hover:underline">Embedded Systems</a>. <br>
-                     Check my <a href="../resume/index.html" class="text-blue-500 hover:underline">Resume</a> for a complete project list.
-                 </p>
-             </div>
-        </div>
-
-        <!-- Backend Skills -->
-        <div class="mb-32">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Core Backend Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="card p-8">
-                    <h4 class="text-xl font-bold mb-6">Backend Development</h4>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">Node.js & Express.js</span>
-                            <span class="text-sm" style="color: var(--text-light)">Runtime & Framework</span>
-                        </li>
-                        <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">REST API Design</span>
-                            <span class="text-sm" style="color: var(--text-light)">Implementation</span>
-                        </li>
-                        <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">Auth & Security</span>
-                            <span class="text-sm" style="color: var(--text-light)">JWT, Authorization</span>
-                        </li>
-                        <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">Database Design</span>
-                            <span class="text-sm" style="color: var(--text-light)">MongoDB, SQL Basics</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card p-8">
-                    <h4 class="text-xl font-bold mb-6">Tools & Practices</h4>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">Git & GitHub</span>
-                            <span class="text-sm" style="color: var(--text-light)">Version Control</span>
-                        </li>
-                        <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">Postman</span>
-                            <span class="text-sm" style="color: var(--text-light)">API Testing</span>
-                        </li>
-                        <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">Debugging</span>
-                            <span class="text-sm" style="color: var(--text-light)">Logging & Analysis</span>
-                        </li>
-                        <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">Clean Code</span>
-                            <span class="text-sm" style="color: var(--text-light)">Modular Architecture</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact CTA -->
-        <div class="card text-center py-20 px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Ready to ship robust code?</h2>
-            <p class="text-xl mb-10 max-w-2xl mx-auto leading-relaxed" style="color: var(--text-light)">
-                Looking for backend / SDE roles where I can work on real systems, APIs, and data-driven applications.
+        <!-- Closing Statement (Critical) -->
+        <div class="card p-10 bg-blue-50 dark:bg-blue-900/10 border-none text-center">
+            <p class="text-xl md:text-2xl font-medium leading-relaxed" style="color: var(--text)">
+                I’m most effective in backend-focused roles where <br class="hidden md:block">
+                <span class="text-blue-600 dark:text-blue-400">system correctness</span>, <span class="text-blue-600 dark:text-blue-400">data integrity</span>, and <span class="text-blue-600 dark:text-blue-400">reliability</span> matter.
             </p>
-            <div>
-                <a href="mailto:email@example.com" class="btn text-lg px-10 py-4">Contact Me</a>
-            </div>
         </div>
 
     </main>

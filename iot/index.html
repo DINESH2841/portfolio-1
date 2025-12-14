@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S. Dinesh | IoT Engineer</title>
+    <title>S. Dinesh | IoT Systems</title>
     <link rel="stylesheet" href="../assets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../assets/theme.js" defer></script>
@@ -12,24 +12,23 @@
 
     <nav class="fixed top-0 left-0 right-0 z-50 nav-header">
         <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="../index.html" class="text-lg font-bold" style="color: var(--text)">← S. Dinesh / IoT</a>
+            <a href="../index.html" class="text-lg font-bold" style="color: var(--text)">← Back to Home</a>
             <button id="theme-toggle-btn" aria-label="Toggle Theme" class="text-xl"></button>
         </div>
     </nav>
 
     <main class="pt-32 md:pt-48 max-w-6xl mx-auto px-6 pb-24">
         
-        <!-- Hero -->
-        <div class="mb-32 text-center md:text-left">
-            <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tighter text-gradient">IoT & Embedded Systems</h1>
-            <p class="text-xl md:text-2xl max-w-3xl leading-relaxed" style="color: var(--text-light)">
-                I engineer efficient firmware and telemetry pipelines. Specializing in <strong>RTOS</strong>, <strong>Edge Computing</strong>, and optimizing low-level device communication protocols.
+        <!-- Hero with Disclaimer -->
+        <div class="mb-24 text-center md:text-left">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">IoT & Embedded Systems</h1>
+            <p class="text-lg md:text-xl max-w-3xl leading-relaxed mb-6" style="color: var(--text-light)">
+                IoT work strengthened my understanding of <strong>data pipelines</strong>, <strong>protocols</strong>, and <strong>backend systems</strong>, which I now apply in SDE roles.
             </p>
         </div>
 
         <!-- Featured Projects -->
         <div class="mb-32">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Embedded Engineering</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                 
                 <!-- Project 1 -->
@@ -37,19 +36,10 @@
                     <div class="mb-6">
                         <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(245, 158, 11, 0.05); border-color: rgba(245, 158, 11, 0.2); color: #d97706">Telemetry Pipeline</span>
                     </div>
-                    <h3 class="text-2xl md:text-3xl font-bold mb-4">IoT Telemetry Stack</h3>
+                    <h3 class="text-2xl font-bold mb-4">IoT Telemetry Stack</h3>
                     <p class="text-lg mb-8 flex-grow leading-relaxed" style="color: var(--text-light)">
-                        Architected a robust sensor network. Programmed ESP32 firmware for precision data acquisition and optimized MQTT payloads for low-bandwidth transmission.
+                        Architected a robust sensor network. Programmed ESP32 firmware and optimized MQTT payloads for backend consumption.
                     </p>
-                    <div class="mb-8 p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-dashed" style="border-color: var(--border)">
-                        <h4 class="text-sm font-bold uppercase tracking-widest mb-2" style="color: var(--text)">Data Flow</h4>
-                        <p class="text-sm font-mono leading-relaxed" style="color: var(--text-light)">
-                            Sensor (I2C/SPI) &rarr; RTOS Task &rarr; MQTT (QoS 1) &rarr; Gateway &rarr; Time-Series DB
-                        </p>
-                    </div>
-                    <div class="flex gap-4 mt-auto">
-                        <a href="https://github.com/dinesh2841" class="btn text-sm w-full text-center">View Firmware</a>
-                    </div>
                 </article>
 
                 <!-- Project 2 -->
@@ -57,55 +47,15 @@
                     <div class="mb-6">
                         <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(245, 158, 11, 0.05); border-color: rgba(245, 158, 11, 0.2); color: #d97706">Edge Computing</span>
                     </div>
-                    <h3 class="text-2xl md:text-3xl font-bold mb-4">Remote Environmental Logger</h3>
+                    <h3 class="text-2xl font-bold mb-4">Remote Environmental Logger</h3>
                     <p class="text-lg mb-8 flex-grow leading-relaxed" style="color: var(--text-light)">
-                        Built a fault-tolerant logging system for off-grid deployment. Implemented circular buffers and interrupt-driven logic to ensure zero data loss during connectivity outages.
+                        Built a fault-tolerant logging system. Implemented buffering to ensure zero data loss before backend sync.
                     </p>
-                    <div class="mb-8 p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-dashed" style="border-color: var(--border)">
-                        <h4 class="text-sm font-bold uppercase tracking-widest mb-2" style="color: var(--text)">Firmware Logic</h4>
-                        <p class="text-sm font-mono leading-relaxed" style="color: var(--text-light)">
-                            ISR Trigger &rarr; Buffer Write &rarr; SD Card (SPI) &rarr; Async Cloud Sync
-                        </p>
-                    </div>
-                    <div class="flex gap-4 mt-auto">
-                        <a href="#" class="btn text-sm w-full text-center">View System Specs</a>
-                    </div>
                 </article>
 
             </div>
         </div>
 
-        <!-- Hardware Stack -->
-        <div class="mb-32">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Protocols & Chips</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-                <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
-                    <i class="fas fa-microchip text-5xl mb-6 text-orange-500"></i>
-                    <h4 class="font-bold text-lg">ESP32 / ARM</h4>
-                    <p class="text-xs mt-2" style="color: var(--text-light)">Firmware Dev</p>
-                </div>
-                <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
-                    <i class="fas fa-network-wired text-5xl mb-6 text-purple-500"></i>
-                    <h4 class="font-bold text-lg">MQTT / CoAP</h4>
-                    <p class="text-xs mt-2" style="color: var(--text-light)">M2M Protocols</p>
-                </div>
-                <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
-                    <i class="fab fa-raspberry-pi text-5xl mb-6 text-red-600"></i>
-                    <h4 class="font-bold text-lg">Edge Linux</h4>
-                    <p class="text-xs mt-2" style="color: var(--text-light)">Gateway Logic</p>
-                </div>
-                <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
-                    <i class="fas fa-random text-5xl mb-6 text-blue-500"></i>
-                    <h4 class="font-bold text-lg">I2C / SPI / UART</h4>
-                    <p class="text-xs mt-2" style="color: var(--text-light)">Serial Comms</p>
-                </div>
-            </div>
-        </div>
-
     </main>
-
-    <footer class="border-t py-16 text-center" style="border-color: var(--border)">
-        <p class="text-sm font-medium" style="color: var(--text-light)">S. Dinesh | IoT Engineer Portfolio &copy; 2025</p>
-    </footer>
 </body>
 </html>

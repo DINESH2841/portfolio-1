@@ -36,22 +36,11 @@
 
     <main class="pt-32 md:pt-48 max-w-4xl mx-auto px-6 pb-24">
         
-        <!-- Role-Based Download Section (Screen Only) -->
-        <section class="mb-16 p-8 rounded-2xl bg-gray-50 dark:bg-white/5 border border-dashed no-print" style="border-color: var(--border)">
-            <h2 class="text-xl font-bold mb-2">Select the resume that matches the role:</h2>
-            <p class="text-sm mb-6" style="color: var(--text-light)">I have tailored my experience to highlight relevance for specific engineering domains.</p>
-            <div class="flex flex-wrap gap-4">
-                <a href="#" class="btn text-sm px-6 py-2"><i class="fas fa-download mr-2"></i> Backend / SDE Resume</a>
-                <a href="#" class="btn-outline text-sm px-6 py-2"><i class="fas fa-download mr-2"></i> Full-Stack Resume</a>
-                <a href="#" class="btn-outline text-sm px-6 py-2"><i class="fas fa-download mr-2"></i> IoT & Embedded Resume</a>
-            </div>
-        </section>
-
         <!-- Resume Header -->
-        <header class="border-b pb-12 mb-12" style="border-color: var(--border)">
+        <header class="border-b pb-8 mb-8" style="border-color: var(--border)">
             <h1 class="text-5xl font-bold mb-4 tracking-tight">S. Dinesh</h1>
             <p class="text-xl font-medium mb-6" style="color: var(--text-light)">
-                Backend-focused Software Engineer
+                Backend Software Engineer
             </p>
             <div class="flex flex-wrap gap-6 text-sm font-medium" style="color: var(--text-light)">
                 <span class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i>Chennai, India</span>
@@ -62,110 +51,91 @@
         </header>
 
         <!-- Summary -->
-        <section class="mb-12 break-inside-avoid">
-             <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Summary</h3>
-             <p class="text-base leading-relaxed" style="color: var(--text-light)">
-                Backend-focused software engineer with internship experience building secure, scalable REST APIs and data-driven systems. Strong in Node.js, authentication, database modeling, and bridging hardware with cloud infrastructure.
+        <section class="mb-10 break-inside-avoid">
+             <h3 class="text-sm font-bold uppercase tracking-widest mb-4 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Summary</h3>
+             <p class="text-base leading-relaxed" style="color: var(--text)">
+                Backend Software Engineer with internship experience building secure REST APIs, authentication systems, and database-backed services. Strong focus on reliability, data integrity, and backend ownership.
              </p>
         </section>
 
         <!-- Professional Experience -->
-        <section class="mb-12 break-inside-avoid">
-            <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Experience</h3>
+        <section class="mb-10 break-inside-avoid">
+            <h3 class="text-sm font-bold uppercase tracking-widest mb-4 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Experience</h3>
             
-            <div class="mb-8">
-                <div class="flex justify-between items-baseline mb-2">
-                    <h4 class="font-bold text-2xl">Hitachi Energy</h4>
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h4 class="font-bold text-xl">Hitachi Energy</h4>
                     <span class="text-sm font-medium bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded" style="color: var(--text)">Aug 2025 – Nov 2025</span>
                 </div>
-                <div class="text-base font-semibold mb-4" style="color: var(--button-bg)">Software Developer Intern</div>
+                <div class="text-base font-semibold mb-3" style="color: var(--button-bg)">Backend Developer Intern</div>
                 <ul class="text-base list-disc pl-5 space-y-2 leading-relaxed" style="color: var(--text-light)">
-                    <li>Engineered backend APIs for an enterprise <strong>Travel Request Management System</strong>.</li>
-                    <li>Implemented <strong>JWT-based authentication</strong> and role-based access control (RBAC) to secure endpoints.</li>
-                    <li>Designed normalized MSSQL database schemas to handle complex multi-stage approval workflows.</li>
-                    <li>Optimized API response times and implemented middleware for centralized error logging.</li>
+                    <li>Designed role-based APIs for a <strong>Travel Request System</strong> to prevent unauthorized access and data leakage.</li>
+                    <li>Implemented <strong>JWT-based authentication</strong> to enable stateless and scalable session management.</li>
+                    <li>Structured database schemas with normalization to ensure data consistency across complex approval workflows.</li>
+                    <li>Built centralized error handling middleware to standardize API responses and improve debugging.</li>
                 </ul>
             </div>
         </section>
 
         <!-- Projects -->
-        <section class="mb-12 break-inside-avoid">
-            <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Key Projects</h3>
+        <section class="mb-10 break-inside-avoid">
+            <h3 class="text-sm font-bold uppercase tracking-widest mb-4 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Key Projects</h3>
             
-            <!-- Backend -->
             <div class="mb-6">
                 <div class="flex justify-between items-baseline mb-1">
-                    <h4 class="font-bold text-xl">Travel Request Management System</h4>
-                    <span class="text-xs font-mono px-2 py-1 rounded bg-gray-100 dark:bg-gray-800" style="color: var(--text-light)">Node.js, Express, MSSQL</span>
+                    <h4 class="font-bold text-lg">User Authentication & Authorization Service</h4>
+                    <span class="text-xs font-mono px-2 py-1 rounded bg-gray-100 dark:bg-gray-800" style="color: var(--text-light)">Node.js, Express, MongoDB</span>
                 </div>
                 <ul class="text-base list-disc pl-5 space-y-1 leading-relaxed" style="color: var(--text-light)">
-                    <li>Designed REST APIs for request creation, validation, and status tracking.</li>
-                    <li>Implemented secure authentication using Microsoft Entra ID (OIDC) and local JWT fallbacks.</li>
+                    <li>Implemented secure password hashing (bcrypt) to protect user credentials against data breaches.</li>
+                    <li>Designed middleware to strictly enforce authentication on protected API routes.</li>
                 </ul>
             </div>
 
-            <!-- Full Stack -->
             <div class="mb-6">
                 <div class="flex justify-between items-baseline mb-1">
-                    <h4 class="font-bold text-xl">Live Analytics Dashboard</h4>
-                    <span class="text-xs font-mono px-2 py-1 rounded bg-gray-100 dark:bg-gray-800" style="color: var(--text-light)">React, WebSockets, Node.js</span>
+                    <h4 class="font-bold text-lg">IoT Data Ingestion Backend</h4>
+                    <span class="text-xs font-mono px-2 py-1 rounded bg-gray-100 dark:bg-gray-800" style="color: var(--text-light)">Node.js, Time-Series DB</span>
                 </div>
                 <ul class="text-base list-disc pl-5 space-y-1 leading-relaxed" style="color: var(--text-light)">
-                    <li>Built a real-time data visualization tool using WebSockets for sub-second latency updates.</li>
-                    <li>Optimized frontend rendering performance to handle high-frequency data streams.</li>
-                </ul>
-            </div>
-
-            <!-- IoT -->
-            <div class="mb-6">
-                <div class="flex justify-between items-baseline mb-1">
-                    <h4 class="font-bold text-xl">IoT Telemetry Stack</h4>
-                    <span class="text-xs font-mono px-2 py-1 rounded bg-gray-100 dark:bg-gray-800" style="color: var(--text-light)">ESP32, MQTT, InfluxDB</span>
-                </div>
-                <ul class="text-base list-disc pl-5 space-y-1 leading-relaxed" style="color: var(--text-light)">
-                    <li>Architected an end-to-end telemetry pipeline from sensor edge nodes to cloud storage.</li>
-                    <li>Implemented resilient data buffering on edge devices to handle network intermittency.</li>
+                    <li>Decoupled data ingestion from processing to maintain system stability during high-traffic bursts.</li>
+                    <li>Optimized database schemas for efficient storage and retrieval of time-series sensor data.</li>
                 </ul>
             </div>
         </section>
 
         <!-- Technical Skills -->
-        <section class="mb-12 break-inside-avoid">
-            <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Technical Skills</h3>
-            <div class="grid grid-cols-1 gap-4">
+        <section class="mb-10 break-inside-avoid">
+            <h3 class="text-sm font-bold uppercase tracking-widest mb-4 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Technical Skills</h3>
+            <div class="grid grid-cols-1 gap-2">
                 <div class="flex flex-col md:flex-row md:items-baseline">
-                    <strong class="w-40 block text-base font-semibold">Backend</strong>
-                    <p class="text-base flex-1" style="color: var(--text-light)">Node.js, Express.js, REST APIs, JWT, Middleware Design</p>
+                    <strong class="w-32 block text-sm font-bold">Backend:</strong>
+                    <p class="text-base flex-1" style="color: var(--text)">Node.js, Express.js, REST APIs, JWT, MongoDB, SQL</p>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-baseline">
-                    <strong class="w-40 block text-base font-semibold">Database</strong>
-                    <p class="text-base flex-1" style="color: var(--text-light)">MSSQL, MongoDB, InfluxDB (Time-Series)</p>
+                    <strong class="w-32 block text-sm font-bold">Programming:</strong>
+                    <p class="text-base flex-1" style="color: var(--text)">JavaScript, Python</p>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-baseline">
-                    <strong class="w-40 block text-base font-semibold">Frontend</strong>
-                    <p class="text-base flex-1" style="color: var(--text-light)">React.js, Next.js, Tailwind CSS</p>
-                </div>
-                 <div class="flex flex-col md:flex-row md:items-baseline">
-                    <strong class="w-40 block text-base font-semibold">IoT & Embedded</strong>
-                    <p class="text-base flex-1" style="color: var(--text-light)">ESP32, MQTT, UART/SPI/I2C, Raspberry Pi</p>
+                    <strong class="w-32 block text-sm font-bold">Tools:</strong>
+                    <p class="text-base flex-1" style="color: var(--text)">Git, Postman, Linux basics</p>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-baseline">
-                    <strong class="w-40 block text-base font-semibold">Tools</strong>
-                    <p class="text-base flex-1" style="color: var(--text-light)">Git, Postman, Docker, Linux</p>
+                    <strong class="w-32 block text-sm font-bold">Concepts:</strong>
+                    <p class="text-base flex-1" style="color: var(--text)">Authentication, API Design, Data Modeling, Error Handling</p>
                 </div>
             </div>
         </section>
 
         <!-- Education -->
         <section class="break-inside-avoid">
-            <h3 class="text-sm font-bold uppercase tracking-widest mb-6 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Education</h3>
-            
-            <div class="mb-6">
-                <div class="flex justify-between items-baseline mb-1">
-                    <h4 class="font-bold text-lg">B.E. Electronics and Communication Engineering</h4>
+            <h3 class="text-sm font-bold uppercase tracking-widest mb-4 border-b pb-2" style="color: var(--text-light); border-color: var(--border)">Education</h3>
+            <div class="mb-2">
+                <div class="flex justify-between items-baseline">
+                    <h4 class="font-bold text-base">B.E. Electronics and Communication Engineering</h4>
                     <span class="text-sm" style="color: var(--text-light)">2022 - 2026</span>
                 </div>
-                <p class="text-base font-medium" style="color: var(--text)">SIMATS University, Chennai</p>
+                <p class="text-sm" style="color: var(--text)">SIMATS University, Chennai</p>
             </div>
         </section>
 
