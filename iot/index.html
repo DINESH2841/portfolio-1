@@ -10,63 +10,63 @@
 </head>
 <body>
 
-    <nav class="sticky top-0 z-50 nav-header">
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-header">
         <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
             <a href="../index.html" class="text-lg font-bold" style="color: var(--text)">← S. Dinesh / IoT</a>
             <button id="theme-toggle-btn" aria-label="Toggle Theme" class="text-xl"></button>
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto px-6 py-24 md:py-32">
+    <main class="pt-32 md:pt-48 max-w-6xl mx-auto px-6 pb-24">
         
         <!-- Hero -->
         <div class="mb-32 text-center md:text-left">
             <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tighter text-gradient">IoT & Embedded Systems</h1>
             <p class="text-xl md:text-2xl max-w-3xl leading-relaxed" style="color: var(--text-light)">
-                Bridging the gap between hardware and software. Building intelligent sensor networks, remote monitoring, and embedded logic.
+                I connect the physical world to the cloud. Specializing in efficient edge processing, MQTT telemetry pipelines, and low-latency control systems.
             </p>
         </div>
 
         <!-- Featured Projects -->
         <div class="mb-32">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Hardware Projects</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Hardware Integration</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                 
                 <!-- Project 1 -->
                 <article class="card h-full">
                     <div class="mb-6">
-                        <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(245, 158, 11, 0.05); border-color: rgba(245, 158, 11, 0.2); color: #d97706">Embedded</span>
+                        <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(245, 158, 11, 0.05); border-color: rgba(245, 158, 11, 0.2); color: #d97706">Pipeline</span>
                     </div>
-                    <h3 class="text-2xl md:text-3xl font-bold mb-4">IoT Monitoring System</h3>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">IoT Telemetry Stack</h3>
                     <p class="text-lg mb-8 flex-grow leading-relaxed" style="color: var(--text-light)">
-                        Designed an IoT stack with sensor ingestion on ESP32, MQTT transport, edge processing on Raspberry Pi, and a web dashboard for realtime monitoring.
+                        Architected an end-to-end monitoring system. ESP32 microcontrollers gather precision sensor data, transmitted via MQTT to a Raspberry Pi gateway, and visualized on a cloud dashboard.
                     </p>
                     <div class="mb-8">
                         <ul class="text-sm space-y-3 font-medium" style="color: var(--text-light)">
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>ESP32 Microcontroller</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Edge Processing (Raspberry Pi)</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>MQTT & Cloud Dashboard</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>ESP32 (C/C++) Firmware</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>MQTT Broker Configuration</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Edge Computing (Raspberry Pi)</li>
                         </ul>
                     </div>
                     <div class="flex gap-4 mt-auto">
-                        <a href="https://github.com/dinesh2841" class="btn text-sm w-full text-center">View on GitHub</a>
+                        <a href="https://github.com/dinesh2841" class="btn text-sm w-full text-center">View Firmware</a>
                     </div>
                 </article>
 
                 <!-- Project 2 -->
                 <article class="card h-full">
                     <div class="mb-6">
-                        <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(245, 158, 11, 0.05); border-color: rgba(245, 158, 11, 0.2); color: #d97706">Data Logging</span>
+                        <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(245, 158, 11, 0.05); border-color: rgba(245, 158, 11, 0.2); color: #d97706">Offline-First</span>
                     </div>
-                    <h3 class="text-2xl md:text-3xl font-bold mb-4">Environmental Logger</h3>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">Remote Environmental Logger</h3>
                     <p class="text-lg mb-8 flex-grow leading-relaxed" style="color: var(--text-light)">
-                        An offline-first logger that stores sensor metrics to SD card storage with a dashboard interface for historical retrieval.
+                        Built a resilient logger for areas with unstable connectivity. Implemented local SD card buffering and automatic data sync when connectivity is restored.
                     </p>
                     <div class="mb-8">
                         <ul class="text-sm space-y-3 font-medium" style="color: var(--text-light)">
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>SD Card Storage SPI</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Precision Sensors</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Data Visualization</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>SPI Protocol (SD Card)</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Low Power Optimization</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Sensor Calibration</li>
                         </ul>
                     </div>
                     <div class="flex gap-4 mt-auto">
@@ -79,48 +79,27 @@
 
         <!-- Hardware Stack -->
         <div class="mb-32">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Hardware & Protocols</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Protocols & Chips</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
                 <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
                     <i class="fas fa-microchip text-5xl mb-6 text-orange-500"></i>
                     <h4 class="font-bold text-lg">ESP32</h4>
+                    <p class="text-xs mt-2" style="color: var(--text-light)">Firmware Dev</p>
                 </div>
                 <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
                     <i class="fas fa-network-wired text-5xl mb-6 text-purple-500"></i>
                     <h4 class="font-bold text-lg">MQTT</h4>
+                    <p class="text-xs mt-2" style="color: var(--text-light)">Telemetry</p>
                 </div>
                 <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
                     <i class="fab fa-raspberry-pi text-5xl mb-6 text-red-600"></i>
                     <h4 class="font-bold text-lg">Raspberry Pi</h4>
+                    <p class="text-xs mt-2" style="color: var(--text-light)">Edge Gateway</p>
                 </div>
                 <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
                     <i class="fas fa-satellite-dish text-5xl mb-6 text-blue-500"></i>
                     <h4 class="font-bold text-lg">Sensors</h4>
-                </div>
-            </div>
-        </div>
-
-        <!-- Certifications -->
-        <div class="mb-32">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Related Certifications</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="card flex-row items-center gap-6 p-6">
-                    <div class="p-4 rounded-full bg-yellow-100 dark:bg-yellow-900/30">
-                        <i class="fas fa-certificate text-2xl text-yellow-600 dark:text-yellow-400"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-lg mb-1">NPTEL: IoT</h4>
-                        <p class="text-sm" style="color: var(--text-light)">Internet of Things Protocols and Architectures</p>
-                    </div>
-                </div>
-                 <div class="card flex-row items-center gap-6 p-6">
-                    <div class="p-4 rounded-full bg-yellow-100 dark:bg-yellow-900/30">
-                        <i class="fas fa-certificate text-2xl text-yellow-600 dark:text-yellow-400"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-lg mb-1">NPTEL: AI & ML</h4>
-                        <p class="text-sm" style="color: var(--text-light)">Applied Machine Learning for Edge Devices</p>
-                    </div>
+                    <p class="text-xs mt-2" style="color: var(--text-light)">Data Acquisition</p>
                 </div>
             </div>
         </div>
@@ -128,20 +107,6 @@
     </main>
 
     <footer class="border-t py-16 text-center" style="border-color: var(--border)">
-        <div class="flex justify-center gap-8 mb-8">
-            <a href="https://linkedin.com/in/dinesh" target="_blank" rel="noopener noreferrer" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/dinesh2841" target="_blank" rel="noopener noreferrer" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:email@example.com" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="Email">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://dineshsevinni.me/" target="_blank" rel="noopener noreferrer" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="Personal Website">
-                <i class="fas fa-globe"></i>
-            </a>
-        </div>
         <p class="text-sm font-medium" style="color: var(--text-light)">S. Dinesh | IoT Engineer Portfolio &copy; 2025</p>
     </footer>
 </body>

@@ -10,63 +10,63 @@
 </head>
 <body>
 
-    <nav class="sticky top-0 z-50 nav-header">
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-header">
         <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
             <a href="../index.html" class="text-lg font-bold" style="color: var(--text)">← S. Dinesh / Full-Stack</a>
             <button id="theme-toggle-btn" aria-label="Toggle Theme" class="text-xl"></button>
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto px-6 py-24 md:py-32">
+    <main class="pt-32 md:pt-48 max-w-6xl mx-auto px-6 pb-24">
         
         <!-- Hero -->
         <div class="mb-32 text-center md:text-left">
-            <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tighter text-gradient">Full-Stack Developer</h1>
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tighter text-gradient">Full-Stack & Tools</h1>
             <p class="text-xl md:text-2xl max-w-3xl leading-relaxed" style="color: var(--text-light)">
-                Crafting seamless experiences using modern React ecosystems, responsive UI engineering, and scalable cloud functions.
+                Building end-to-end solutions. I focus on component reusability, server-side rendering for performance, and real-time data handling.
             </p>
         </div>
 
         <!-- Featured Projects -->
         <div class="mb-32">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Web Applications</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Web Architecture</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                 
                 <!-- Project 1 -->
                 <article class="card h-full">
                     <div class="mb-6">
-                        <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.2); color: #10b981">Realtime</span>
+                        <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.2); color: #10b981">High Frequency</span>
                     </div>
                     <h3 class="text-2xl md:text-3xl font-bold mb-4">Live Analytics Dashboard</h3>
                     <p class="text-lg mb-8 flex-grow leading-relaxed" style="color: var(--text-light)">
-                        A high-frequency data visualization tool. Uses WebSockets to stream live metrics to client-side charts without page refreshes.
+                        Engineered a WebSocket-based visualization tool. Solved React re-rendering bottlenecks by optimizing state management for high-frequency data streams.
                     </p>
                     <div class="mb-8">
                         <ul class="text-sm space-y-3 font-medium" style="color: var(--text-light)">
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>React + WebSocket API</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Dynamic Charting Libs</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Node.js Event Loop</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>React.js optimized hooks</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>WebSocket API</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Real-time DOM updates</li>
                         </ul>
                     </div>
                     <div class="flex gap-4 mt-auto">
-                        <a href="#" class="btn text-sm w-full text-center">Live Demo</a>
+                        <a href="#" class="btn text-sm w-full text-center">View Logic</a>
                     </div>
                 </article>
 
                 <!-- Project 2 -->
                 <article class="card h-full">
                     <div class="mb-6">
-                        <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.2); color: #10b981">Automation</span>
+                        <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.2); color: #10b981">Control Systems</span>
                     </div>
                     <h3 class="text-2xl md:text-3xl font-bold mb-4">Automation Control Hub</h3>
                     <p class="text-lg mb-8 flex-grow leading-relaxed" style="color: var(--text-light)">
-                        A unified interface for controlling remote hardware relays. Features a responsive UI for mobile control and state persistence.
+                        A responsive Next.js application managing hardware states via REST API. Implemented optimistic UI updates to ensure the interface feels instant even on slow networks.
                     </p>
                     <div class="mb-8">
                         <ul class="text-sm space-y-3 font-medium" style="color: var(--text-light)">
                             <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Next.js Server Actions</li>
                             <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Tailwind CSS System</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>REST API integration</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>REST API Integration</li>
                         </ul>
                     </div>
                     <div class="flex gap-4 mt-auto">
@@ -77,50 +77,29 @@
             </div>
         </div>
 
-        <!-- Tech Stack -->
+        <!-- Stack Context -->
         <div class="mb-32">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Frontend & Cloud Stack</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Development Tooling</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
                 <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
                     <i class="fab fa-react text-5xl mb-6 text-blue-400"></i>
-                    <h4 class="font-bold text-lg">React / Next.js</h4>
+                    <h4 class="font-bold text-lg">React</h4>
+                    <p class="text-xs mt-2" style="color: var(--text-light)">Component Architecture</p>
                 </div>
                 <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
                     <i class="fas fa-wind text-5xl mb-6 text-cyan-500"></i>
-                    <h4 class="font-bold text-lg">Tailwind CSS</h4>
+                    <h4 class="font-bold text-lg">Tailwind</h4>
+                    <p class="text-xs mt-2" style="color: var(--text-light)">Design Systems</p>
                 </div>
                 <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
                     <i class="fab fa-js text-5xl mb-6 text-yellow-400"></i>
                     <h4 class="font-bold text-lg">TypeScript</h4>
+                    <p class="text-xs mt-2" style="color: var(--text-light)">Type Safety</p>
                 </div>
                 <div class="card items-center text-center p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
                     <i class="fas fa-cloud text-5xl mb-6 text-gray-500"></i>
                     <h4 class="font-bold text-lg">Firebase</h4>
-                </div>
-            </div>
-        </div>
-
-        <!-- Certifications -->
-        <div class="mb-32">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Certifications</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="card flex-row items-center gap-6 p-6">
-                    <div class="p-4 rounded-full bg-yellow-100 dark:bg-yellow-900/30">
-                        <i class="fas fa-certificate text-2xl text-yellow-600 dark:text-yellow-400"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-lg mb-1">Frontend Certifications</h4>
-                        <p class="text-sm" style="color: var(--text-light)">Focus on Responsive Design and Accessibility</p>
-                    </div>
-                </div>
-                 <div class="card flex-row items-center gap-6 p-6">
-                    <div class="p-4 rounded-full bg-yellow-100 dark:bg-yellow-900/30">
-                        <i class="fas fa-certificate text-2xl text-yellow-600 dark:text-yellow-400"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-lg mb-1">Oracle Cloud Foundations</h4>
-                        <p class="text-sm" style="color: var(--text-light)">Cloud Infrastructure principles</p>
-                    </div>
+                    <p class="text-xs mt-2" style="color: var(--text-light)">Serverless Auth</p>
                 </div>
             </div>
         </div>
@@ -128,20 +107,6 @@
     </main>
 
     <footer class="border-t py-16 text-center" style="border-color: var(--border)">
-        <div class="flex justify-center gap-8 mb-8">
-            <a href="https://linkedin.com/in/dinesh" target="_blank" rel="noopener noreferrer" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/dinesh2841" target="_blank" rel="noopener noreferrer" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:email@example.com" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="Email">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://dineshsevinni.me/" target="_blank" rel="noopener noreferrer" class="text-2xl transition-transform hover:scale-110" style="color: var(--text-light)" aria-label="Personal Website">
-                <i class="fas fa-globe"></i>
-            </a>
-        </div>
         <p class="text-sm font-medium" style="color: var(--text-light)">S. Dinesh | Full-Stack Portfolio &copy; 2025</p>
     </footer>
 </body>

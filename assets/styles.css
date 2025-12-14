@@ -11,7 +11,7 @@
     --button-text: #ffffff;
     --card-bg: rgba(255, 255, 255, 0.8);
     --card-border: rgba(0, 0, 0, 0.05);
-    --nav-glass: rgba(255, 255, 255, 0.7);
+    --nav-glass: rgba(255, 255, 255, 0.85); /* Slightly more opaque for fixed header */
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
     --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -27,7 +27,7 @@
     --button-text: #ffffff;
     --card-bg: rgba(30, 30, 32, 0.7);
     --card-border: rgba(255, 255, 255, 0.1);
-    --nav-glass: rgba(21, 21, 22, 0.7);
+    --nav-glass: rgba(21, 21, 22, 0.85);
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
@@ -43,7 +43,7 @@
     --button-text: #ffffff;
     --card-bg: rgba(20, 20, 20, 0.8);
     --card-border: #333333;
-    --nav-glass: rgba(0, 0, 0, 0.8);
+    --nav-glass: rgba(0, 0, 0, 0.9);
 }
 
 * {
@@ -87,6 +87,8 @@ h1, h2, h3, h4, h5, h6 {
 .py-24 { padding-top: 6rem; padding-bottom: 6rem; }
 .py-32 { padding-top: 8rem; padding-bottom: 8rem; }
 .py-40 { padding-top: 10rem; padding-bottom: 10rem; }
+.pt-32 { padding-top: 8rem; } /* Added for fixed header compensation */
+.md\:pt-48 { padding-top: 12rem; } /* Desktop fixed header compensation */
 
 /* Grid & Flex */
 .flex { display: flex; }
@@ -109,12 +111,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Text Utilities */
 .text-center { text-align: center; }
+.text-left { text-align: left; }
 .font-medium { font-weight: 500; }
 .font-semibold { font-weight: 600; }
 .font-bold { font-weight: 700; }
 .leading-relaxed { line-height: 1.625; }
 .tracking-tight { letter-spacing: -0.025em; }
 .tracking-tighter { letter-spacing: -0.05em; }
+.tracking-widest { letter-spacing: 0.1em; }
+.uppercase { text-transform: uppercase; }
 
 .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
 .text-base { font-size: 1rem; line-height: 1.5rem; }
@@ -198,18 +203,28 @@ h1, h2, h3, h4, h5, h6 {
 .mb-4 { margin-bottom: 1rem; }
 .mb-6 { margin-bottom: 1.5rem; }
 .mb-8 { margin-bottom: 2rem; }
+.mb-10 { margin-bottom: 2.5rem; }
 .mb-12 { margin-bottom: 3rem; }
 .mb-24 { margin-bottom: 6rem; }
-.mt-4 { margin-top: 1rem; }
-.pb-32 { padding-bottom: 8rem; }
+.mb-32 { margin-bottom: 8rem; }
+.mt-auto { margin-top: auto; }
+.mr-2 { margin-right: 0.5rem; }
+.mr-3 { margin-right: 0.75rem; }
+.p-8 { padding: 2rem; }
+.p-12 { padding: 3rem; }
 
 .rounded-full { border-radius: 9999px; }
 .rounded-lg { border-radius: 0.75rem; }
 .rounded-xl { border-radius: 1rem; }
+.rounded-2xl { border-radius: 1.5rem; }
+.rounded-3xl { border-radius: 1.5rem; }
 .object-cover { object-fit: cover; }
 
-.sticky { position: sticky; }
+.fixed { position: fixed; }
 .top-0 { top: 0; }
+.left-0 { left: 0; }
+.right-0 { right: 0; }
+.w-full { width: 100%; }
 .z-50 { z-index: 50; }
 .hidden { display: none; }
 .block { display: block; }
@@ -222,10 +237,13 @@ h1, h2, h3, h4, h5, h6 {
     .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .md\:text-left { text-align: left; }
+    .md\:text-4xl { font-size: 2.25rem; }
     .md\:text-6xl { font-size: 3.75rem; }
     .md\:text-7xl { font-size: 4.5rem; }
     .md\:py-32 { padding-top: 8rem; padding-bottom: 8rem; }
     .md\:py-40 { padding-top: 10rem; padding-bottom: 10rem; }
+    .md\:pt-48 { padding-top: 12rem; }
 }
 
 @media print {

@@ -16,12 +16,13 @@
             .break-inside-avoid { break-inside: avoid; }
             nav { display: none; }
             main { padding: 0 !important; max-width: 100% !important; margin: 0 !important; }
+            .pt-32, .md\:pt-48 { padding-top: 0 !important; }
         }
     </style>
 </head>
 <body>
 
-    <nav class="sticky top-0 z-50 nav-header no-print">
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-header no-print">
         <div class="max-w-4xl mx-auto px-6 h-20 flex justify-between items-center">
             <a href="../index.html" class="text-lg font-bold" style="color: var(--text)">← Back to Portfolio</a>
             <div class="flex gap-4">
@@ -33,7 +34,7 @@
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-6 py-24">
+    <main class="pt-32 md:pt-48 max-w-4xl mx-auto px-6 pb-24">
         
         <!-- Resume Header -->
         <header class="border-b pb-12 mb-12" style="border-color: var(--border)">
