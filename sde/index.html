@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S. Dinesh | Backend Engineering</title>
+    <title>S. Dinesh | Backend Engineer</title>
     <link rel="stylesheet" href="../assets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../assets/theme.js" defer></script>
@@ -21,9 +21,18 @@
         
         <!-- Hero -->
         <div class="mb-32 text-center md:text-left">
-            <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tighter text-gradient">Backend Engineering</h1>
-            <p class="text-xl md:text-2xl max-w-3xl leading-relaxed" style="color: var(--text-light)">
-                Designing robust APIs, optimizing database schemas, and building role-based systems for enterprise environments.
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tighter text-gradient">Backend Software Engineer (SDE)</h1>
+            <p class="text-xl md:text-2xl max-w-3xl leading-relaxed mb-6" style="color: var(--text-light)">
+                I design and build scalable backend systems, REST APIs, and data-driven services with a focus on reliability, security, and real-world use cases.
+            </p>
+            <div class="p-4 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 inline-block text-left">
+                <p class="text-base font-medium text-blue-800 dark:text-blue-200">
+                    <i class="fas fa-check-circle mr-2"></i>Internship experience building production-style systems using Node.js, databases, and authentication workflows.
+                </p>
+            </div>
+            
+            <p class="mt-8 text-lg font-medium" style="color: var(--text)">
+                Comfortable building backend services from scratch, handling authentication, data modeling, and API design.
             </p>
         </div>
 
@@ -31,104 +40,127 @@
         <div class="mb-32">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Production Experience</h2>
             
-            <!-- Highlighted Internship Project -->
-            <article class="card h-full border-2" style="border-color: rgba(37,99,235,0.1);">
+            <!-- Project 1: Travel Request -->
+            <article class="card h-full border-2 mb-12" style="border-color: rgba(37,99,235,0.1);">
                 <div class="md:flex justify-between items-start mb-6">
                     <div>
                         <span class="text-sm font-bold px-3 py-1.5 rounded-full uppercase tracking-widest bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">Hitachi Energy Internship</span>
-                        <h3 class="text-3xl md:text-4xl font-bold mt-4 mb-2">Enterprise Travel Request System</h3>
-                    </div>
-                </div>
-                
-                <p class="text-xl mb-8 leading-relaxed max-w-4xl" style="color: var(--text-light)">
-                    I engineered a production-grade internal workflow tool to manage travel approvals for hundreds of employees. This wasn't just a CRUD app; it required strict security compliance and complex state management.
-                </p>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                    <div class="p-4 rounded-xl bg-gray-50 dark:bg-white/5">
-                        <h4 class="font-bold mb-2">Secure Authentication</h4>
-                        <p class="text-sm" style="color: var(--text-light)">Integrated <strong>Microsoft Entra ID (Azure AD)</strong> via OIDC for secure, token-based authentication.</p>
-                    </div>
-                    <div class="p-4 rounded-xl bg-gray-50 dark:bg-white/5">
-                        <h4 class="font-bold mb-2">Role-Based Access</h4>
-                        <p class="text-sm" style="color: var(--text-light)">Designed <strong>relational database schemas</strong> (MSSQL) to enforce strict referential integrity across multi-stage approval workflows.</p>
-                    </div>
-                    <div class="p-4 rounded-xl bg-gray-50 dark:bg-white/5">
-                        <h4 class="font-bold mb-2">Audit & Reliability</h4>
-                        <p class="text-sm" style="color: var(--text-light)">Implemented <strong>middleware-level logging</strong> to capture request metadata, ensuring full traceability for compliance.</p>
+                        <h3 class="text-3xl md:text-4xl font-bold mt-4 mb-2">Travel Request Management System</h3>
+                        <p class="text-lg" style="color: var(--text-light)">Backend system for managing employee travel requests with role-based approvals and audit tracking.</p>
                     </div>
                 </div>
 
-                <div class="flex gap-4">
-                    <a href="#" class="btn text-sm">Review Architecture</a>
-                </div>
-            </article>
-        </div>
-
-        <!-- Other Projects -->
-        <div class="mb-32">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Research & Engineering</h2>
-            
-            <article class="card">
                 <div class="mb-6">
-                    <span class="text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border" style="background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.2); color: #10b981">Deep Learning Pipeline</span>
+                    <strong class="text-lg block mb-2" style="color: var(--button-bg)">Role: Backend Developer</strong>
+                    <ul class="list-disc pl-5 space-y-2 text-lg leading-relaxed" style="color: var(--text-light)">
+                        <li>Designed REST APIs for travel request creation, multi-stage approval, and status tracking.</li>
+                        <li>Implemented <strong>secure authentication</strong> using Microsoft Entra ID (SSO) and role-based access control (RBAC).</li>
+                        <li>Structured <strong>MSSQL database schemas</strong> to enforce referential integrity across users, requests, and logs.</li>
+                        <li>Added middleware-level validation and centralized error handling for API reliability.</li>
+                        <li>Ensured clean separation of concerns between controller logic, services, and data access layers.</li>
+                    </ul>
                 </div>
-                <h3 class="text-2xl md:text-3xl font-bold mb-4">Oral Abnormality Detection</h3>
-                <p class="text-lg mb-8 leading-relaxed" style="color: var(--text-light)">
-                    Developed an end-to-end ML pipeline improving diagnostic accuracy. I focused on the reproducible training loop and model evaluation metrics. <br><br>
-                    <strong>Technical Detail:</strong> Built a Python-based preprocessing pipeline to normalize inputs before inference and served the model via a Flask API for client integration.
-                </p>
-                <div class="flex gap-4">
-                    <a href="https://github.com/dinesh2841" class="btn text-sm">View Source & Notebooks</a>
+
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">Node.js</span>
+                    <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">Express.js</span>
+                    <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">MSSQL</span>
+                    <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">Azure AD</span>
                 </div>
             </article>
         </div>
 
-        <!-- Contextual Skills -->
+        <!-- Engineering Projects -->
         <div class="mb-32">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Technical Arsenal</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Backend Engineering Projects</h2>
+            
+            <div class="grid grid-cols-1 gap-12">
                 
+                <!-- Project 2: IoT Backend -->
+                <article class="card">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-2">IoT Data Ingestion & Monitoring Backend</h3>
+                    <p class="text-lg mb-6" style="color: var(--text-light)">Backend service for collecting, storing, and visualizing sensor data from ESP32-based devices.</p>
+                    
+                    <div class="mb-6">
+                        <strong class="text-base block mb-2" style="color: var(--button-bg)">Role: Backend Developer</strong>
+                        <ul class="list-disc pl-5 space-y-2 text-base leading-relaxed" style="color: var(--text-light)">
+                            <li>Designed APIs to receive sensor data from ESP32 devices over MQTT/HTTP gateways.</li>
+                            <li>Processed and stored <strong>time-series data</strong> in InfluxDB for efficient historical querying.</li>
+                            <li>Built endpoints to retrieve aggregated data for visualization dashboards.</li>
+                            <li>Ensured fault tolerance for missing or delayed sensor data packets.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">Node.js</span>
+                        <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">MQTT</span>
+                        <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">InfluxDB</span>
+                    </div>
+                </article>
+
+                <!-- Project 3: ML API -->
+                <article class="card">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-2">Diagnostic Inference API Service</h3>
+                    <p class="text-lg mb-6" style="color: var(--text-light)">Backend service providing secure access to a Deep Learning model for real-time predictions.</p>
+                    
+                    <div class="mb-6">
+                        <strong class="text-base block mb-2" style="color: var(--button-bg)">Role: Backend Engineer</strong>
+                        <ul class="list-disc pl-5 space-y-2 text-base leading-relaxed" style="color: var(--text-light)">
+                            <li>Designed a <strong>Flask API</strong> to serve a DenseNet201 model for image classification.</li>
+                            <li>Implemented input validation pipelines to normalize image data before inference.</li>
+                            <li>Handled edge cases and returned standardized JSON error responses for invalid inputs.</li>
+                            <li>Optimized response times by pre-loading the model into memory on server start.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">Python</span>
+                        <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">Flask</span>
+                        <span class="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono">TensorFlow</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+        <!-- Technical Arsenal -->
+        <div class="mb-32">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Core Backend Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="card p-8">
-                    <h4 class="text-xl font-bold mb-6 flex items-center">
-                        <i class="fas fa-server mr-3 text-blue-500"></i> Production Stack
-                    </h4>
+                    <h4 class="text-xl font-bold mb-6">API & Architecture</h4>
                     <ul class="space-y-4">
                         <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">Node.js & Express</span>
-                            <span class="text-sm" style="color: var(--text-light)">API Development</span>
+                            <span class="font-medium">REST API Design</span>
+                            <span class="text-sm" style="color: var(--text-light)">Resource Modeling</span>
                         </li>
                         <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">MSSQL / SQL</span>
-                            <span class="text-sm" style="color: var(--text-light)">Complex Queries & Relational Data</span>
+                            <span class="font-medium">Authentication</span>
+                            <span class="text-sm" style="color: var(--text-light)">JWT, OAuth, RBAC</span>
                         </li>
                         <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">Next.js (SSR)</span>
-                            <span class="text-sm" style="color: var(--text-light)">Full-stack Workflows</span>
+                            <span class="font-medium">System Design</span>
+                            <span class="text-sm" style="color: var(--text-light)">MVC, Separation of Concerns</span>
                         </li>
                     </ul>
                 </div>
-
                 <div class="card p-8">
-                    <h4 class="text-xl font-bold mb-6 flex items-center">
-                        <i class="fas fa-brain mr-3 text-purple-500"></i> Data & AI
-                    </h4>
-                     <ul class="space-y-4">
+                    <h4 class="text-xl font-bold mb-6">Data & Infrastructure</h4>
+                    <ul class="space-y-4">
                         <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">Python</span>
-                            <span class="text-sm" style="color: var(--text-light)">Scripting & Automation</span>
+                            <span class="font-medium">Databases</span>
+                            <span class="text-sm" style="color: var(--text-light)">MSSQL, MongoDB, InfluxDB</span>
                         </li>
                         <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">TensorFlow</span>
-                            <span class="text-sm" style="color: var(--text-light)">Model Training Pipelines</span>
+                            <span class="font-medium">Node.js Runtime</span>
+                            <span class="text-sm" style="color: var(--text-light)">Async/Await, Event Loop</span>
                         </li>
                         <li class="flex justify-between border-b pb-2" style="border-color: var(--border)">
-                            <span class="font-medium">Java</span>
-                            <span class="text-sm" style="color: var(--text-light)">Object Oriented Design</span>
+                            <span class="font-medium">Tooling</span>
+                            <span class="text-sm" style="color: var(--text-light)">Postman, Git, Docker</span>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
 
@@ -136,7 +168,7 @@
         <div class="card text-center py-20 px-6">
             <h2 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Ready to ship robust code?</h2>
             <p class="text-xl mb-10 max-w-2xl mx-auto leading-relaxed" style="color: var(--text-light)">
-                I bring internship experience and a production-first mindset.
+                I bring backend engineering experience and a focus on production quality.
             </p>
             <div>
                 <a href="mailto:email@example.com" class="btn text-lg px-10 py-4">Contact Me</a>
@@ -146,7 +178,7 @@
     </main>
 
     <footer class="border-t py-16 text-center" style="border-color: var(--border)">
-        <p class="text-sm font-medium" style="color: var(--text-light)">S. Dinesh | Software Engineer Portfolio &copy; 2025</p>
+        <p class="text-sm font-medium" style="color: var(--text-light)">S. Dinesh | Backend Software Engineer &copy; 2025</p>
     </footer>
 </body>
 </html>
