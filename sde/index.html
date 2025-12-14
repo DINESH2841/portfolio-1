@@ -47,15 +47,15 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                     <div class="p-4 rounded-xl bg-gray-50 dark:bg-white/5">
                         <h4 class="font-bold mb-2">Secure Authentication</h4>
-                        <p class="text-sm" style="color: var(--text-light)">Implemented Microsoft SSO integration to ensure secure, password-less login using company credentials.</p>
+                        <p class="text-sm" style="color: var(--text-light)">Integrated <strong>Microsoft Entra ID (Azure AD)</strong> via OIDC for secure, token-based authentication.</p>
                     </div>
                     <div class="p-4 rounded-xl bg-gray-50 dark:bg-white/5">
-                        <h4 class="font-bold mb-2">Role-Based Access (RBAC)</h4>
-                        <p class="text-sm" style="color: var(--text-light)">Architected distinct workflows for Employees (Submit), Managers (Approve/Reject), and Admins (Audit).</p>
+                        <h4 class="font-bold mb-2">Role-Based Access</h4>
+                        <p class="text-sm" style="color: var(--text-light)">Designed <strong>relational database schemas</strong> (MSSQL) to enforce strict referential integrity across multi-stage approval workflows.</p>
                     </div>
                     <div class="p-4 rounded-xl bg-gray-50 dark:bg-white/5">
                         <h4 class="font-bold mb-2">Audit & Reliability</h4>
-                        <p class="text-sm" style="color: var(--text-light)">Built database-backed audit logs to track every state change for compliance and debugging.</p>
+                        <p class="text-sm" style="color: var(--text-light)">Implemented <strong>middleware-level logging</strong> to capture request metadata, ensuring full traceability for compliance.</p>
                     </div>
                 </div>
 
@@ -75,7 +75,8 @@
                 </div>
                 <h3 class="text-2xl md:text-3xl font-bold mb-4">Oral Abnormality Detection</h3>
                 <p class="text-lg mb-8 leading-relaxed" style="color: var(--text-light)">
-                    Developed an end-to-end ML pipeline improving diagnostic accuracy. I focused on the reproducible training loop and model evaluation metrics, implementing DenseNet201 architecture with custom data preprocessing.
+                    Developed an end-to-end ML pipeline improving diagnostic accuracy. I focused on the reproducible training loop and model evaluation metrics. <br><br>
+                    <strong>Technical Detail:</strong> Built a Python-based preprocessing pipeline to normalize inputs before inference and served the model via a Flask API for client integration.
                 </p>
                 <div class="flex gap-4">
                     <a href="https://github.com/dinesh2841" class="btn text-sm">View Source & Notebooks</a>

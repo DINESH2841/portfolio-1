@@ -41,12 +41,11 @@
                     <p class="text-lg mb-8 flex-grow leading-relaxed" style="color: var(--text-light)">
                         Architected an end-to-end monitoring system. ESP32 microcontrollers gather precision sensor data, transmitted via MQTT to a Raspberry Pi gateway, and visualized on a cloud dashboard.
                     </p>
-                    <div class="mb-8">
-                        <ul class="text-sm space-y-3 font-medium" style="color: var(--text-light)">
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>ESP32 (C/C++) Firmware</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>MQTT Broker Configuration</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Edge Computing (Raspberry Pi)</li>
-                        </ul>
+                    <div class="mb-8 p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-dashed" style="border-color: var(--border)">
+                        <h4 class="text-sm font-bold uppercase tracking-widest mb-2" style="color: var(--text)">Data Pipeline</h4>
+                        <p class="text-sm font-mono leading-relaxed" style="color: var(--text-light)">
+                            Analog Sensors &rarr; ESP32 (ADC) &rarr; MQTT (Pub/Sub) &rarr; Node.js Subscriber &rarr; InfluxDB
+                        </p>
                     </div>
                     <div class="flex gap-4 mt-auto">
                         <a href="https://github.com/dinesh2841" class="btn text-sm w-full text-center">View Firmware</a>
@@ -62,12 +61,11 @@
                     <p class="text-lg mb-8 flex-grow leading-relaxed" style="color: var(--text-light)">
                         Built a resilient logger for areas with unstable connectivity. Implemented local SD card buffering and automatic data sync when connectivity is restored.
                     </p>
-                    <div class="mb-8">
-                        <ul class="text-sm space-y-3 font-medium" style="color: var(--text-light)">
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>SPI Protocol (SD Card)</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Low Power Optimization</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--button-bg)"></i>Sensor Calibration</li>
-                        </ul>
+                    <div class="mb-8 p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-dashed" style="border-color: var(--border)">
+                        <h4 class="text-sm font-bold uppercase tracking-widest mb-2" style="color: var(--text)">System Architecture</h4>
+                        <p class="text-sm font-mono leading-relaxed" style="color: var(--text-light)">
+                            Interrupt-driven Sensor Read &rarr; SPI Buffer &rarr; SD Card Write &rarr; Batch Cloud Sync (on Connect)
+                        </p>
                     </div>
                     <div class="flex gap-4 mt-auto">
                         <a href="#" class="btn text-sm w-full text-center">View Specs</a>
